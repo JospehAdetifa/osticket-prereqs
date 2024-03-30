@@ -34,10 +34,19 @@ Something Important to note! You will need to have an Azure subcription to follo
 <h2>Installation Steps</h2>
 STEP 1: Create Resource Group & Virtual Machine In Azure 
 
-The first thing you want to do is make a resource group in Azure. 
+
+The first thing you want to do is make a resource group in Azure.
+
+
 On your Azure Portal go to Create resource group.
+
+
 I like to keep things organised so I will call this resource group "osTicket-lab".
+
+
 Choose Your Region. 
+
+
 Then click create resource group. 
 
 <img width="1440" alt="Screenshot 2024-03-29 at 20 58 20" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/98077935-7253-4994-932c-7413bef26d37">
