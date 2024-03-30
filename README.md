@@ -49,50 +49,105 @@ Choose Your Region.
 
 Then click create resource group. 
 
+
+
 <img width="1440" alt="Screenshot 2024-03-29 at 20 58 20" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/98077935-7253-4994-932c-7413bef26d37">
 
 Next Go to your Azure Portal and Click Create Virtual Machine. 
+
+
 I will name mine 'osTicketVM' and put it in the "osTicket-lab" resource group. 
+
+
 For the image section we will be using a windows 10 virtual machine. 
+
+
+
 <img width="1440" alt="Screenshot 2024-03-29 at 21 13 53" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/8d6e5682-32f6-4042-b25f-c0f1201542bf">
+
+
 
 There are a few key steps to keep in mind here. 
 
+
+
 1.Firstly Make Sure that your virtual machine is in the same region as your resource group. 
 
-2. Second Ensure that the size of your virtual machine is adequate. 
-It must have at 2vcpus! 
-This is an important step. I experienced a lot of problems during this stage because I picked a machine that only have 1vcpu at first. 
+
+
+2. Second Ensure that the size of your virtual machine is adequate. It must have at 2vcpus! This is an important step. I experienced a lot of problems during this stage because I picked a machine that only have 1vcpu at first. 
 My Virtual Machine was so slow to the point of it being unusable.
 
-3. Finally when creating the VM, allow it to make a new Virtual Network or "Vnet".
+
+
+4. Finally when creating the VM, allow it to make a new Virtual Network or "Vnet".
+
+
 
 STEP 2: Log On To Your Virtual Machine 
 
+
+
+
 First off copy your Virtual Machine's public address. 
+
+
+
 <img width="1440" alt="Screenshot 2024-03-29 at 21 25 10" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/09ca4af8-c967-4346-81ff-69cbe3e0ebe0">
+
+
 
 We will paste this into a remote desktop software.
 
 If you are on a mac you can use the app "microsoft remote desktop"
+
+
+
 Windows Users can you the program remote desktop connection. 
+
+
+
 <img width="473" alt="Screenshot 2024-03-29 at 21 27 58" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/302debc6-ac41-4025-8ae8-deda8c23492e">
 
+
+
+
 Using the user name and password you made on Azure log onto your virtual machine.
+
+
+
 <img width="439" alt="Screenshot 2024-03-29 at 21 29 16" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/4daa1bb6-733c-455e-acf4-5aeec8314b63">
 
-If you found this part difficult it's probably because you made a difficult username and password. 
-Remember guys KISS. Keep it simple stupid. 
+
+
+If you found this part difficult it's probably because you made a difficult username and password. Remember guys KISS. Keep it simple stupid. 
+
+
 
 STEP 3: Set Up & Configure IIS
 
+
+
 Bring up your control panel and go to programs. 
+
+
 From there click turn windows features on/off. 
+
+
+
 <img width="1123" alt="Screenshot 2024-03-29 at 21 45 53" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/7b913287-9b4e-4a04-bf4e-aa337ce2c608">
 
+
+
 Look for IIS which stands for internet information services. 
+
+
 Check the ISS box.
+
+
 Expand World Wide Web Services. Then Expand Application Development features then check CGI.
+
+
 Expand ISS and check everything under comman HTTP features.
 After all of that click 'ok' to install the web server.
 
