@@ -25,11 +25,14 @@ Something Important to note! You will need to have an Azure subcription to follo
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- PHP Manager for IIS PHPManagerForIIS_V1.5.0.msi
+-  Rewrite Module rewrite_amd64_en-US.msi
+-  PHP 7.3.8 php-7.3.8-nts-Win32-VC15-x86.zip
+- VC_redist.x86.exe
+- MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+- HeidiSQL.
+
+
 
 <h2>Installation Steps</h2>
 STEP 1: Create Resource Group & Virtual Machine In Azure 
