@@ -142,7 +142,98 @@ If it is written different to this there will be an error message later on in th
 
 Reload the IIS and restart it. 
 
-STEP 8: 
+STEP 8: Check osTicket 
+Go to ISS > sites > default > osTicket > browse *80
+You should see a screen like the image below 
+
+Step 9: Enable IIS Extensions 
+Go To PHP manager 
+Click on enable or disable an extension
+
+Enable: php_imap.dll 
+Enable: php_intl.dll
+Enable: php_opcache.dll
+
+Make sure all of these are checked to avoid issues later. 
+
+Refresh osTicket in the browser and you should see that these extentions are now ticked
+
+Step 10: Setup ost-config.php file
+Go to C-drive > inetpub > wwwroot > include
+Then find the ost-sampleconfig.php file 
+Rename this file by removing the word sample.
+
+This file is important because the osTicket installer needs to interact with this file to allow users to have permissions to interact with osTickets functions
+
+Right click the file go to properities > security > advanced > disable inheritance.
+
+Then we will click remove all permissions.
+
+Then click add 
+
+Set principle
+
+You see a box at the bottom with the description "enter the objects name to select". 
+In this box write "everyone".
+
+Then click check names and press ok to finish this process.
+
+For now we will be giving everyone permissions to use this file.
+Check the "full control box" to do this. 
+
+Then click ok > apply > ok > ok to finish this process 
+
+STEP 11: Continue setting up osticket 
+
+We are almost done now. 
+
+Go to your browser with osticket loaded and click continue.
+Enter in all of the personal detials till you get to the mydatabase section. 
+Be sure to note down all of this information to avoid trouble with logging in later.
+
+Step 12: Set up a database on our Virtual machine
+
+To do this we have to install Heidi SQL
+
+Once you have finished the intial installation you'll see a creen like the one below.
+Click new then type in your password from before. 
+Click open and you would have finished the connection to the my sequal server.
+
+Step 11: Finish setting up osTicket on your browser
+
+Type in your user name "root" and the password you picked into the database settings on your browser. 
+
+We will next need to make an osticket database on Heidi SQL
+
+Right click unnamed them create new. 
+
+Name the database osticket then click ok.
+
+Go back to your browser and click install and boom!!! You've set up osTicket
+
+STEP 12: Clean up
+
+Delete the setup folder located in C:\inetpub\wwwroot\osTicket\setup 
+
+Next we are going to change back the permission settings on the ost-config.php to read only
+Right click the file > go to properties > security > advanced > go to everyone > edit > then uncheck everything besides read & execute and read. 
+
+
+With that done all we need to do now is test logging on.
+
+STEP 13: TEST 
+
+Using this link login using the password and username you made earlier: 
+http://localhost/osTicket/scp/login.php  
+
+Enter in your detials 
+
+
+BOOM! COMPLETE! 
+
+
+
+
 
 </p>
 <br />
