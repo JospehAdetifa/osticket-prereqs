@@ -86,6 +86,8 @@ Check the ISS box.
 Expand World Wide Web Services. Then Expand Application Development features then check CGI.
 Expand ISS and check everything under comman HTTP features.
 After all of that click 'ok' to install the web server.
+
+
 <img width="416" alt="Screenshot 2024-03-29 at 21 44 45" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/cf9c8921-b28f-4c91-bbe6-fbd30a4cc5e3">
 
 STEP 4: Test The Server 
@@ -199,11 +201,15 @@ Rename this file by removing the word sample.
 This file is important because the osTicket installer needs to interact with this file to allow users to have permissions to interact with osTickets functions
 
 Right click the file go to properities > security > advanced > disable inheritance.
+
 <img width="364" alt="Screenshot 2024-03-30 at 13 24 01" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/06209fd7-c2f8-4f62-be42-7d55cca34f4b">
+
 <img width="364" alt="Screenshot 2024-03-30 at 13 24 21" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/024678fb-9a9a-4f90-a83f-6f3225881f27">
+
 <img width="770" alt="Screenshot 2024-03-30 at 13 24 51" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/2b2b2b28-d09b-4806-8e73-cac0132394f3">
 
 Then we will click remove all permissions.
+
 <img width="524" alt="Screenshot 2024-03-30 at 13 25 14" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/3e1c8ae7-155f-4688-98cb-f4f3b259ea82">
 
 Then click add 
@@ -232,17 +238,21 @@ We are almost done now.
 Go to your browser with osticket loaded and click continue.
 Enter in all of the personal detials till you get to the mydatabase section. 
 Be sure to note down all of this information to avoid trouble with logging in later.
+
 <img width="821" alt="Screenshot 2024-03-30 at 13 42 54" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/26505883-3f7c-478e-9d2d-1f0b91343b25">
 
 Step 12: Set up a database on our Virtual machine
 
 To do this we have to install Heidi SQL
+
 <img width="598" alt="Screenshot 2024-03-30 at 13 48 19" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/2e205ae9-0e60-433d-910d-c364f02ef676">
 
 Once you have finished the intial installation you'll see a screen like the one below.
+
 <img width="598" alt="Screenshot 2024-03-30 at 13 48 40" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/3d588f78-3015-4180-8fa7-6e1792bec740">
 
 Click new then type in your password from before. 
+
 <img width="685" alt="Screenshot 2024-03-30 at 13 50 42" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/f070a6fe-75f5-4150-962d-e33c24490915">
 
 Click open and you would have finished the connection to the my sequal server.
@@ -252,16 +262,21 @@ Step 11: Finish setting up osTicket on your browser
 Type in your user name "root" and the password you picked into the database settings on your browser. 
 
 We will next need to make an osticket database on Heidi SQL
+
 <img width="916" alt="Screenshot 2024-03-30 at 13 54 43" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/4bd9858d-3177-4511-bbc2-65fee87a86f5">
 
 Right click unnamed them create new. 
+
 <img width="916" alt="Screenshot 2024-03-30 at 13 58 01" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/080ea93c-791e-4bbc-9ddb-2164e2044a14">
+
 <img width="916" alt="Screenshot 2024-03-30 at 13 58 22" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/8ff03445-5aef-41c5-a944-04cd1cd9ad99">
 
 Name the database osticket then click ok.
+
 <img width="318" alt="Screenshot 2024-03-30 at 14 00 23" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/3a08c976-a0fa-4f4c-9d63-2b4a7a3f7601">
 
 Go back to your browser and click install 
+
 <img width="817" alt="Screenshot 2024-03-30 at 14 02 06" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/84326257-ce69-4105-b612-bc4b3021d22b">
 
 and boom!!! You've set up osTicket
@@ -271,12 +286,14 @@ and boom!!! You've set up osTicket
 STEP 12: Clean up
 
 Delete the setup folder located in C:\inetpub\wwwroot\osTicket\setup 
+
 <img width="800" alt="Screenshot 2024-03-30 at 14 06 44" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/05499ef6-aa78-4971-b0a3-5ca7aefffaf2">
 
 Next we are going to change back the permission settings on the ost-config.php to read only
 <img width="795" alt="Screenshot 2024-03-30 at 14 12 14" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/47ae638a-1f95-4283-bc8d-f7ae97376be8">
 
 Right click the file > go to properties > security > advanced > go to everyone > edit > then uncheck everything besides read & execute and read. 
+
 <img width="915" alt="Screenshot 2024-03-30 at 14 13 49" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/b3125c33-6b10-41f0-bbe7-3ec0c7bfd5a2">
 
 With that done all we need to do now is test logging on.
@@ -294,21 +311,3 @@ BOOM! COMPLETE!
 <img width="967" alt="Screenshot 2024-03-30 at 14 18 49" src="https://github.com/JospehAdetifa/osticket-prereqs/assets/165278529/f3e2ce32-b5b1-47e5-ab44-7e5a9551fffd">
 
 
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
